@@ -117,4 +117,18 @@
         </trim>
     </insert>
 
+    <insert id="batchInsert" parameterType="cn.net.susan.entity.sys.UserRoleEntity">
+        INSERT INTO sys_user_role
+        (
+          user_id,
+          role_id
+        )
+        VALUES
+        <foreach collection="list" item="item" open="(" close=")" separator=",">
+         (
+           #{item.userId},
+           #{item.roleId}
+         )
+        </foreach>
+    </insert>
 </mapper>

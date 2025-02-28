@@ -16,7 +16,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author kk, 正常接口响应处理
+ * @author 苏三，该项目是知识星球：java突击队 的内部项目
  * @date 2024/1/9 下午2:09
  */
 @ControllerAdvice
